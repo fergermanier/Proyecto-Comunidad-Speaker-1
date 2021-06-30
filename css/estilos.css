@@ -1,0 +1,481 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+/*Bloque HEADER: MENÚ NAVEGADOR SITIO*/
+
+#header{
+min-height: : 120px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+#header .logo{
+margin-left: 20px;
+}
+
+#header ul{
+list-style-type: none;
+}
+
+#header li{
+display: inline-block;
+padding: 0 10px;
+}
+
+#header li a{
+padding: 2px 7px 2px 7px;
+color: #666;
+font-family: serif;
+font-size: 20px;
+background-color: white;
+border: 1px solid #black;
+text-decoration: none;
+}
+
+#header li a:hover{
+color: #18DB97;
+}
+
+.button {
+display: inline-block;
+font-family: 'Times New Roman';
+font-size: 20px;
+color: black;
+padding: 10px 10px;
+margin-right: 20px;
+background-color: rgb(37, 196, 143);
+border-radius: 35px;
+text-decoration: none;
+}
+
+.button:hover{
+color: white;
+background-color: rgb(36, 37, 37);
+text-decoration: none;
+}
+
+/*INDEX - 1er Bloque CONTENIDO: Introducción */
+
+.cajaIntroduccion{
+position: relative;
+display: flex;
+margin-right: 60px;
+padding: 180px;
+padding-top: 180px;
+padding-top: 30px;
+padding-bottom: 20px;
+}
+
+.cajaIntroduccion img{
+border-radius: 10px;
+}
+
+.texto1{
+position: absolute;
+top: 60px;
+margin-left: 270px;
+font-family: 'Roboto Slab', serif;
+font-size: 25px;
+font-weight: bolder;
+word-spacing: 10px;
+}
+
+.texto2{
+position: absolute;
+top: 22%;
+margin-right: 200px;
+text-align: right;
+font-size: 18px;
+font-family: 'Roboto Slab', serif;
+line-height: 20px;
+margin-left: 400px;
+background-color: white;
+border-radius: 5px;
+}
+
+/*INDEX - 2do Bloque CONTENIDO: educación e-Learning */
+
+.gradiente1 {
+background-image: linear-gradient(to left, rgb(230, 220, 220), rgb(163, 161, 161));
+width: 100%;
+margin-top: 5px;
+padding-block: 10px;
+border-radius: 10px;
+}
+
+.gradiente1 h3{ 
+font-family: 'Roboto Slab', serif;
+background-color: white;
+font-size: 20px;
+text-align: center;
+}
+    
+.gradiente1 p{
+font-family: 'Roboto Slab', serif;
+font-size: 14px;
+color: black;
+font-weight: bolder;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 15px;
+line-height: 10px;
+}
+
+/*INDEX - 3er Bloque CONTENIDO: Integrantes */
+
+.integrantes_grid{
+display: grid;
+grid-template-columns: 220px;
+grid-template-rows: 40px 200px 200px;
+grid-template-areas: 
+"header header"
+"foto1 cv1"
+"foto2 cv2";
+margin-bottom: 40px;
+margin-top: 20px;
+grid-row-gap: 10px;
+}
+
+.header {
+grid-area: header;
+background-color: white;
+width: 100%;
+height: 40px;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-name: aparecer;
+}
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header h1{
+font-size: 24px;
+font-family: 'Roboto Slab', serif;
+font-style: italic;
+text-align: right;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.foto1 {
+grid-area: foto1;
+display: flex;
+flex-direction: row;
+}
+
+.foto1 img{
+border-radius: 10px;
+margin-left: 5px;
+}
+
+.cv1 {
+grid-area: cv1;
+display: inline-block;
+flex-direction: row;
+background-image: linear-gradient(to bottom,rgb(165, 64, 216), rgb(207, 171, 205));
+border-radius: 10px;
+}
+
+.cv1 h1{
+font-family: 'Roboto Slab', serif;
+font-size: 20px;
+color: black;
+style: bolder;
+margin-top: 30px;
+margin-left: 15px
+}
+
+.cv1 p{
+color: rgb(0, 0, 0);
+margin-left: 15px;
+margin-right: 60px;
+line-height: 22px;
+font-family: 'Roboto Slab', serif;
+}
+
+.cv2 {
+grid-area: cv2;
+display: inline-block;
+flex-direction: row;
+background-image: linear-gradient(to bottom,rgb(207, 171, 205), rgb(240, 233, 233));
+border-radius: 10px;
+}
+
+.cv2 h1{
+font-family: 'Roboto Slab', serif;
+font-size: 20px;
+style: bolder;
+margin-top: 50px;
+margin-left: 15px
+}
+
+.cv2 p{
+margin-left: 15px;
+margin-right: 60px;
+line-height: 22px;
+font-family: 'Roboto Slab', serif;
+}
+
+.foto2 {
+grid-area: foto2;
+display: flex;
+flex-direction: row;
+}
+
+.foto2 img{
+border-radius: 10px;
+margin-left: 5px;
+}
+
+/*PAGINA E-LEARNING: BLOQUE DE CONTENIDO*/
+
+a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.contenedor { 
+max-width: 1000px;
+width: 90%;
+margin: 0 auto;
+margin-top: 10%;
+font-size: 1em;
+}
+
+.contenedor__cards {
+margin: 70px 0;
+}
+
+.card { 
+background: rgb(77, 22, 72);
+border-radius: 15px;
+padding: 20px;
+display: flex;
+align-items: center;
+position: relative;
+margin-bottom: 50px;
+}
+
+.card__thumbnail {
+width: 650px;
+height: 200px;
+margin-right: 20px;
+border-radius: 10px;
+display: inline-block;
+overflow: visible;
+}
+
+.card__img {
+width: 60%;
+margin-inline: 8%;
+border-radius: 8%;
+}
+
+.card__titulo {
+font-family: serif;
+font-size: 30px;
+font-weight: normal;
+margin-bottom: 20px;
+color: white;
+}
+
+.card__enlace {
+color: #000;
+}
+
+.card__extracto {
+line-height: 28px;
+color: white;
+margin-bottom: 20px;
+}
+
+.boton {
+border: none;
+min-width: 100px;
+height: 50px;
+padding: 0 30px;
+background: #000;
+color: #fff;
+display: inline-block;
+border-radius: 100px;
+text-decoration: none;
+display: inline-flex;
+justify-content: space-between;
+align-items: center;
+background: #38c59b;
+transition: .3s ease all;
+}
+
+.boton__texto {
+font-weight: 1000;
+}
+
+.boton:hover {
+background: #999a9b;
+text-decoration: none;
+}
+
+.boton--absolute {
+position: absolute;
+right: 20px;
+bottom: -25px;
+}
+
+.boton--meencanta {
+background: rgb(77, 22, 72);
+}
+
+.boton--meencanta:hover {
+background: #866e86;
+}
+
+.frase {
+text-align: center;
+margin: 70px 0;
+}
+
+.frase__texto {
+margin-bottom: 20px;
+font-size: 30px;
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+font-style: italic;
+}
+
+/*PAGINA QUIÉNES SOMOS: BLOQUE DE CONTENIDO*/
+
+#quienesSomos { 
+max-width: 1000px;
+width: 90%;
+margin: 0 auto;
+margin-top: 10%;
+font-size: 1em;
+}
+    
+.quienesSomos__cards {
+margin: 70px 0;
+}
+    
+#quienesSomos .card { 
+background: rgb(77, 22, 72);
+border-radius: 15px;
+padding: 20px;
+display: flex;
+align-items: center;
+position: relative;
+margin-bottom: 50px;
+}
+    
+#quienesSomos .card__thumbnail {
+width: 900px;
+height: 400px;
+margin-right: 20px;
+margin-top: 30px;
+border-radius: 10px;
+display: inline-block;
+overflow: visible;
+}
+    
+#quienesSomos .card__img {
+width: 85%;
+margin-inline: 8%;
+border-radius: 8%;
+}
+    
+#quienesSomos .card__titulo {
+font-family: serif;
+font-size: 34px;
+font-weight: bolder;
+margin-bottom: 20px;
+color: black;
+background-color: pink;
+border-radius: 5px;
+}
+    
+#quienesSomos .card__enlace {
+color: #000;
+}
+
+#quienesSomos .card__extracto {
+line-height: 28px;
+color: black;
+margin-bottom: 20px;
+color: blanchedalmond;
+}
+    
+#quienesSomos .boton {
+border: none;
+min-width: 80px;
+height: 50px;
+padding: 0 30px;
+background: #000;
+color: rgb(2, 2, 2);
+display: inline-block;
+border-radius: 100px;
+text-decoration: none;
+display: inline-flex;
+justify-content: space-between;
+align-items: center;
+background: #f5c3e8;
+transition: .3s ease all;
+}
+    
+#quienesSomos .boton__texto {
+font-weight: 1000;
+}
+    
+#quienesSomos .boton:hover {
+background: #999a9b;
+text-decoration: none;
+}
+    
+#quienesSomos .boton--absolute {
+position: absolute;
+right: 20px;
+bottom: -25px;
+}
+
+
+/*PAGINA CONTACTO: BLOQUE DE CONTENIDO*/
+
+.table-1 {
+background-image: linear-gradient(to left, rgb(26, 182, 148), violet);
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 16px;
+line-height: 35px;
+}
+
+
+/*FOOTER DEL SITIO*/
+
+footer { 
+font-family: 'Roboto Slab', serif;
+margin-top: 10px;
+text-align: center;
+background-color: rgb(221, 219, 219);
+}
+
+footer .enlaces {
+font-size: 14px;
+letter-spacing: 3px;
+text-decoration: none;
+}
+
+footer .marca {
+font-size: 13px;
+font-family: 'Roboto Slab', serif;
+}

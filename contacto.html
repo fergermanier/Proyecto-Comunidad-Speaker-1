@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <link rel="stylesheet" href="css/estilos.css">
+	 <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Comunidad Speaker</title>
+</head>
+
+<body>
+   
+<!--Bloque HEADER: MENÚ NAVEGADOR-->
+
+<div id="header" class="headerPrincipal">
+	<div class="logo">
+		<a href="index.html"> <img src="img/logo.png" alt="Comunidad Speaker" width="170px" height="170px"></a>
+	</div>
+	<div class="navegador">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="elearning.html">E-Learning</a></li>
+			<li><a href="quienessomos.html">Quiénes somos</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</div>
+</div>	
+
+<!--PÁGINA CONTACTO: BLOQUE DE CONTENIDO-->
+
+	<div class="table-1">  
+		<table width="100%" border="0" cellpadding="90" cellspacing="60"> 
+			<th width="40%" > <img src="img/contacto.png" alt="img-contacto" width="50%"></th> 
+
+			<td>
+	    		<div class="formulario">
+					<form action="envia.php" method="POST" enctype="multipart/form-data">
+						<fieldset>
+						<legend><h2>Dejanos tu mensaje y te contactaremos a la brevedad</h2></legend>
+						<label for="nombreyapellido">Nombre y apellido</label>
+						<input type="text" name="nombreyapellido" maxlength="100">
+						<br>
+						<label for="empresa">Empresa</label>
+						<input type="text" name="empresa" maxlength="100">
+						<br>
+						<label for="correoelectronico">Correo electrónico</label>
+						<input type="text" name="correoelectronico" maxlength="100">
+						<br>
+						<label for="telefonodecontacto">Teléfono de contacto</label>
+						<input type="text" name="telefonodecontacto" maxlength="100">
+						<br>
+						<h5>Selecciona qué modalidad de trabajo te interesa:</h5>
+						<select name="modalidad">
+						<option value="Entrenamiento individual">Entrenamiento individual</option>
+						<option value="Entrenamiento grupal">Entrenamiento grupal</option>
+						<option value="ComuEncuentros">#ComuEncuentros</option>
+						</select>
+						<br>
+						<textarea>Escribe aquí tu consulta</textarea>
+						<br>
+						<br>
+            			<div>Deseo recibir novedades</div>
+            			<input type="checkbox" name="novedades" value="1">
+            			<br>
+            			<input type="submit" name="submit" value="Enviar">
+            			<input type="reset" name="reset" value="Borrar">
+            			</fieldset>
+					</form>
+				</div>
+			</td>
+		</table>    
+	</div>
+
+<br>
+
+<!--FOOTER DEL SITIO-->
+<div>
+	<footer> 
+		<footer class="enlaces"> <a href="index.html"> Inicio</a> | <a href="elearning.html">E-Learning</a> | <a href="quienes somos.html">Quiénes somos</a> | <a href="contacto.html">Contacto</a></footer>
+		<footer class="marca">Todos los derechos reservados * Comunidad Speaker - Buenos Aires, Argentina * 2021</footer>  
+	</footer>
+</div>
+
+</body>
+
+</html>
